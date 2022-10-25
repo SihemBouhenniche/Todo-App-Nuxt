@@ -1,7 +1,22 @@
 # todo-app
+After  I started using NuxtJS last year, I discovered how much this framework is powerful and full of options and properties that made creating web apps much easier. The most important thing that you need to know about this framework is that NuxtJS supports SSR (server side rendering), which means that NuxtJS requires a server that renders a webpage and passes it to the VueJS client-side (all that is implemented by NuxtJS behind scenes). However, if you try to implement complicated operations like accessing to a database or having push notifications channels you will find difficulties specially if you try to do it without requesting external REST API. This pushes us to ask the question : 
+Is it possible to create a REST API with NuxtJS ? 
+The answer is : YES. By using the serverMiddleware property of NuxtJS, creating a REST API with NuxtJS is totally possible. Through this tutorial, we will discover how to achieve that.
 
-## Build Setup
+Read keep reading at : 
+## DEVELOPEMENT AND BUILD SETUP
+The project can be served by docker-compose : 
+```bash
+# build and run project by docker-compose in interactive mode
+$ docker-compose -f docker-compose.development.yml up --build
 
+# run project only
+$ docker-compose -f docker-compose.development.yml up 
+
+# run project in detached mode
+$ docker-compose -f docker-compose.development.yml up -d
+```
+Or without using docker-compose, in this case we should setup database connection correctly.
 ```bash
 # install dependencies
 $ npm install
