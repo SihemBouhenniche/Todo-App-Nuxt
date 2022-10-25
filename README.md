@@ -3,7 +3,7 @@ After  I started using NuxtJS last year, I discovered how much this framework is
 Is it possible to create a REST API with NuxtJS ? 
 The answer is : YES. By using the serverMiddleware property of NuxtJS, creating a REST API with NuxtJS is totally possible. Through this tutorial, we will discover how to achieve that.
 
-Read keep reading at : 
+Read keep reading at : https://medium.com/@fs_bouhenniche/is-it-possible-to-create-a-rest-api-with-nuxtjs-230685fbd2bc
 ## DEVELOPEMENT AND BUILD SETUP
 The project can be served by docker-compose : 
 ```bash
